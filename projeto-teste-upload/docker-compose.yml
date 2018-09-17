@@ -1,0 +1,12 @@
+version: "3"
+services:
+  web:
+    container_name: "php-upload"
+    build: .
+    volumes:
+      - "/home/guilherme/www/projeto-teste-upload:/var/www/html"
+    ports:
+      - "8080:80"
+    restart: always    
+ 
+     
